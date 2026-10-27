@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17191c">
+  <meta name="description" content="Emergency Welding Dhorela, Bijoliya Road, Budhpura Dhorela — पाइप, नट-बोल्ट, कील, हथौड़ी और रोज़मर्रा का हार्डवेयर सामान।">
+  <title>Emergency Welding Dhorela | Hardware Shop</title>
+  <style>
+    :root {
+      --site-primary: #f5b400;
+      --site-secondary: #22262b;
+      --site-background: #101214;
+      --site-on-primary: #171717;
+      --site-on-secondary: #ffffff;
+      --site-on-background: #f7f7f5;
+      --site-font-body: system-ui, -apple-system, "Noto Sans Devanagari", "Mangal", sans-serif;
+      --site-font-heading: system-ui, -apple-system, "Noto Sans Devanagari", "Mangal", sans-serif;
+      --site-heading-scale: 1;
+      --site-spacing-scale: 1;
+      --site-radius-scale: 1;
+      --site-decoration-opacity: 1;
+      color-scheme: light dark;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--site-font-body); background: light-dark(#f4f5f6, var(--site-background)); color: light-dark(#191b1e, var(--site-on-background)); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .root { min-height: 100vh; background-color: var(--site-background); color: var(--site-on-background); border-radius: 0; overflow: hidden; }
+    .topbar { background: var(--site-secondary); border-bottom: 1px solid #3a3d41; }
+    .nav { max-width: 1120px; margin: auto; padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 850; letter-spacing: .2px; }
+    .brand-mark { width: 44px; height: 44px; display: grid; place-items: center; background: var(--site-primary); color: var(--site-on-primary); border-radius: 12px; font-size: 23px; }
+    .brand small { display: block; color: #c4c7ca; font-size: 11px; font-weight: 600; letter-spacing: 1.4px; }
+    .nav-cta, .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 800; border-radius: 12px; padding: 12px 17px; background: var(--site-primary); color: var(--site-on-primary); border: 0; cursor: pointer; }
+    .hero { position: relative; background: radial-gradient(ellipse at 82% 25%, #514019 0%, #25231d 24%, #17191c 61%); }
+    .hero:after { content: ""; position: absolute; width: 290px; height: 290px; right: -80px; bottom: -150px; border: 36px solid rgba(245,180,0,.13); border-radius: 50%; pointer-events: none; opacity: var(--site-decoration-opacity); }
+    .hero-inner { max-width: 1120px; margin: auto; padding: 72px 22px 76px; display: grid; grid-template-columns: 1.25fr .75fr; gap: 40px; align-items: center; }
+    .eyebrow { display: inline-block; color: var(--site-primary); font-weight: 850; letter-spacing: 1.8px; font-size: 12px; text-transform: uppercase; margin-bottom: 15px; }
+    h1 { font-family: var(--site-font-heading); font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.08; margin: 0 0 18px; letter-spacing: -1.5px; }
+    h1 span { color: var(--site-primary); }
+    .hero p { color: #d0d1d1; max-width: 610px; font-size: 18px; margin: 0 0 28px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn.secondary { background: transparent; color: white; border: 1px solid #65676a; }
+    .shop-illustration { min-height: 300px; display: grid; place-items: center; position: relative; }
+    .tool-card { width: min(100%, 340px); padding: 28px; border: 1px solid #55504a; border-radius: 24px; background: linear-gradient(145deg, #303033, #191a1c); box-shadow: 0 25px 65px #0005; transform: rotate(2deg); }
+    .tool-icon { font-size: 72px; line-height: 1.1; text-align: center; margin-bottom: 12px; }
+    .tool-card h2 { text-align: center; font-size: 23px; margin: 0 0 6px; }
+    .tool-card p { text-align: center; margin: 0; font-size: 14px; }
+    .mini-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
+    .mini-tags span { border: 1px solid #5d5a50; color: #f6d77a; border-radius: 999px; padding: 5px 10px; font-size: 12px; }
+    .strip { background: var(--site-primary); color: var(--site-on-primary); }
+    .strip-inner { max-width: 1120px; margin: auto; padding: 15px 22px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font-weight: 850; }
+    section { padding: 66px 22px; }
+    .section-inner { max-width: 1120px; margin: auto; }
+    .section-head { max-width: 700px; margin-bottom: 30px; }
+    .section-head .eyebrow { margin-bottom: 7px; }
+    h2.section-title { font-size: clamp(1.8rem, 4vw, 2.7rem); margin: 0 0 10px; line-height: 1.2; }
+    .muted { color: #b8bdc2; }
+    .products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .product { background: #1c1f22; border: 1px solid #34383c; padding: 24px 18px; border-radius: 18px; transition: transform .2s, border-color .2s; }
+    .product:hover { transform: translateY(-4px); border-color: var(--site-primary); }
+    .product .emoji { font-size: 38px; margin-bottom: 12px; }
+    .product h3 { margin: 0 0 6px; font-size: 18px; }
+    .product p { color: #b8bdc2; margin: 0; font-size: 14px; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .info-panel { padding: 28px; border-radius: 20px; background: #1b1e21; border: 1px solid #34383c; }
+    .info-panel h3 { font-size: 23px; margin: 0 0 15px; }
+    .info-row { display: flex; gap: 13px; align-items: flex-start; padding: 13px 0; border-bottom: 1px solid #34383c; }
+    .info-row:last-child { border-bottom: 0; }
+    .info-row .ico { width: 38px; height: 38px; flex: 0 0 38px; border-radius: 10px; display: grid; place-items: center; background: #373124; }
+    .info-row strong { display: block; }
+    .info-row span, .info-row a { color: #c3c7ca; overflow-wrap: anywhere; }
+    .contact { background: #1a1d20; }
+    .contact-card { background: linear-gradient(125deg, #292a29, #202225); border: 1px solid #4a4538; border-radius: 24px; padding: 36px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .contact-card h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 8px; }
+    .contact-card p { margin: 0; color: #c3c7ca; }
+    footer { padding: 24px 22px; background: #0b0c0d; color: #aeb2b6; text-align: center; font-size: 13px; }
+    .float-wa { position: fixed; right: 18px; bottom: 18px; z-index: 10; border-radius: 999px; padding: 13px 18px; background: #20bd63; color: white; font-weight: 850; box-shadow: 0 8px 28px #0007; }
+    @media (max-width: 760px) {
+      .nav { padding: 12px 16px; }
+      .nav-cta { padding: 10px 12px; font-size: 13px; }
+      .brand { font-size: 14px; }
+      .brand-mark { width: 39px; height: 39px; }
+      .hero-inner { grid-template-columns: 1fr; padding: 52px 20px 45px; gap: 16px; }
+      .hero p { font-size: 16px; }
+      .shop-illustration { min-height: 230px; }
+      .tool-card { max-width: 300px; padding: 22px; }
+      .strip-inner { padding: 14px 20px; }
+      section { padding: 48px 20px; }
+      .products { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .product { padding: 19px 15px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-card { flex-direction: column; align-items: flex-start; padding: 27px 23px; }
+    }
+    @media (max-width: 360px) { .products { grid-template-columns: 1fr; } .brand small { letter-spacing: .7px; } }
+  </style>
+</head>
+<body>
+  <div class="root" id="top">
+    <header class="topbar">
+      <nav class="nav" aria-label="मुख्य नेविगेशन">
+        <a class="brand" href="#top"><span class="brand-mark">🔧</span><span>EMERGENCY WELDING<small>DHORELA · HARDWARE SHOP</small></span></a>
+        <a class="nav-cta" href="#contact">संपर्क करें <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <span class="eyebrow">आपकी अपनी लोकल हार्डवेयर दुकान</span>
+            <h1>हार्डवेयर का सामान,<br><span>एक ही जगह।</span></h1>
+            <p>पाइप, नट-बोल्ट, कील, हथौड़ी और रोज़मर्रा के हार्डवेयर सामान के लिए आइए — Emergency Welding Dhorela, Bijoliya Road, Budhpura Dhorela.</p>
+            <div class="actions">
+              <a class="btn" href="tel:9828041531">📞 अभी कॉल करें</a>
+              <a class="btn secondary" href="https://wa.me/919828041531" target="_blank" rel="noopener">WhatsApp पर बात करें</a>
+            </div>
+          </div>
+          <div class="shop-illustration" aria-label="हार्डवेयर सामान का चित्रात्मक प्रदर्शन">
+            <div class="tool-card">
+              <div class="tool-icon">🧰</div>
+              <h2>काम का सामान</h2>
+              <p>रोज़मर्रा की ज़रूरतों के लिए हार्डवेयर</p>
+              <div class="mini-tags"><span>पाइप</span><span>नट-बोल्ट</span><span>कील</span><span>हथौड़ी</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="strip"><div class="strip-inner"><span>📍 बिजोलिया रोड, बुधपुरा, धोरेला</span><span>🕗 रोज़ाना सुबह 8 बजे – रात 8 बजे</span><span>📞 9828041531</span></div></div>
+      <section id="products">
+        <div class="section-inner">
+          <div class="section-head"><span class="eyebrow">हमारे यहाँ उपलब्ध</span><h2 class="section-title">हार्डवेयर के ज़रूरी सामान</h2><p class="muted">आपकी बताई जानकारी के आधार पर कुछ मुख्य सामान यहाँ दिखाए गए हैं। किसी खास सामान की उपलब्धता के लिए फोन करके पूछें।</p></div>
+          <div class="products">
+            <article class="product"><div class="emoji">🪈</div><h3>पाइप</h3><p>ज़रूरत के अनुसार पाइप के लिए संपर्क करें।</p></article>
+            <article class="product"><div class="emoji">🔩</div><h3>नट-बोल्ट</h3><p>जोड़ने और फिटिंग के काम का सामान।</p></article>
+            <article class="product"><div class="emoji">📌</div><h3>कील</h3><p>अलग-अलग कामों के लिए कील।</p></article>
+            <article class="product"><div class="emoji">🔨</div><h3>हथौड़ी व औज़ार</h3><p>काम में इस्तेमाल होने वाले ज़रूरी औज़ार।</p></article>
+          </div>
+        </div>
+      </section>
+      <section id="about" style="background:#151719">
+        <div class="section-inner about-grid">
+          <div class="section-head"><span class="eyebrow">हमारे बारे में</span><h2 class="section-title">Emergency Welding Dhorela</h2><p class="muted">धोरेला, बुधपुरा में आपकी स्थानीय हार्डवेयर दुकान। पाइप, नट-बोल्ट, कील और औज़ारों के बारे में जानकारी लेने या सामान पूछने के लिए हमसे संपर्क करें।</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Emergency+Welding+Dhorela+Bijoliya+Road+Budhpura+Dhorela" target="_blank" rel="noopener">📍 Google Maps पर देखें</a></div>
+          <div class="info-panel"><h3>दुकान की जानकारी</h3>
+            <div class="info-row"><div class="ico">👨‍🔧</div><div><strong>दुकान के मालिक</strong><span>देवलाल गुर्जर</span></div></div>
+            <div class="info-row"><div class="ico">🕗</div><div><strong>खुलने का समय</strong><span>सुबह 8:00 बजे से रात 8:00 बजे तक</span></div></div>
+            <div class="info-row"><div class="ico">📍</div><div><strong>पता</strong><span>बिजोलिया रोड, बुधपुरा, धोरेला, राजस्थान</span></div></div>
+            <div class="info-row"><div class="ico">🛠️</div><div><strong>दुकान पर</strong><span>हार्डवेयर का सामान उपलब्ध · दुकान पर वेल्डिंग सेवा नहीं है</span></div></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="section-inner"><div class="contact-card"><div><span class="eyebrow">संपर्क करें</span><h2>किसी सामान की जानकारी चाहिए?</h2><p>कॉल करें या WhatsApp पर पूछें।</p><p style="margin-top:12px"><strong>9828041531</strong> &nbsp;·&nbsp; <strong>9649500343</strong></p></div><div class="actions"><a class="btn" href="tel:9828041531">📞 कॉल करें</a><a class="btn" style="background:#20bd63;color:white" href="https://wa.me/919649500343" target="_blank" rel="noopener">WhatsApp करें</a></div></div></div>
+      </section>
+    </main>
+    <footer>© <span id="year"></span> Emergency Welding Dhorela · बिजोलिया रोड, बुधपुरा, धोरेला</footer>
+  </div>
+  <a class="float-wa" href="https://wa.me/919828041531" target="_blank" rel="noopener" aria-label="WhatsApp पर संपर्क करें">☏ WhatsApp</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
